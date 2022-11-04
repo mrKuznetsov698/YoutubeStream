@@ -29,4 +29,6 @@ class Matrix:
             for j in range(self.height):
                 if self.matrix[i][j]:
                     self.img_d.rectangle((self.cell_size * i, self.cell_size * j, self.cell_size * (i + 1), self.cell_size * (j + 1)), fill='#ffffff')
+                else:
+                    self.img_d.rectangle((self.cell_size * i, self.cell_size * j, self.cell_size * (i + 1), self.cell_size * (j + 1)), fill='#000000')
         return self.img
