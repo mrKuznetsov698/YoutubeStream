@@ -15,7 +15,6 @@ def setup(set_p, clr_p):
         if error != 0:
             return
         set_p(x, y)
-        print(ms.chat.id)
 
     @bot.message_handler(commands=['clr'], regexp=r"/clr \d+ \d+", func=lambda x: x.chat.id == config.ALLOWED_ID)
     def clr_pix(ms: Message):
@@ -23,7 +22,6 @@ def setup(set_p, clr_p):
         if error != 0:
             return
         clr_p(x, y)
-        print(ms.chat.id)
 
 
 def polling():

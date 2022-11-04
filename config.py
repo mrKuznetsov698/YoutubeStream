@@ -16,4 +16,4 @@ BOARD_HEIGHT = HEIGHT // CELL_SIZE
 
 # Telegram configs
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-ALLOWED_ID = -1001757398982
+ALLOWED_ID = int(os.getenv('ALLOWED_ID'))
